@@ -47,10 +47,3 @@ LABEL org.opencontainers.image.title="n8n" \
       org.opencontainers.image.source="https://github.com/n8n-io/n8n" \
       org.opencontainers.image.url="https://n8n.io" \
       org.opencontainers.image.version=${N8N_VERSION}
-FROM n8nio/n8n:latest
-
-# Timezone (optional)
-ENV GENERIC_TIMEZONE="Asia/Kolkata"
-
-# Render runs as root → fix folder perms
-USER root
